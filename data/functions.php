@@ -18,5 +18,5 @@ function randomPassword()
 if (isset($_GET["numero"])) {
     session_start();
     $_SESSION["numero_session"] = randomPassword();
-    header('Location: ./output.php');
+    header('Location: output.php');
 }

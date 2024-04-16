@@ -29,11 +29,15 @@ require_once __DIR__ . '/data/functions.php';
                     <input class="form-control" name="numero" type="number" id="psw">
                     <button class="btn btn-danger mt-3" type="submit">Invia</button>
                 </form>
-
             </div>
         </div>
-
     </div>
 </body>
 
 </html>
+
+<style>
+    body {
+        background-color: rgb(192, 192, 192);
+    }
+</style>
