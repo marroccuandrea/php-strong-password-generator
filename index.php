@@ -29,7 +29,7 @@ require_once __DIR__ . '/data/functions.php';
                     <input class="form-control" name="numero" type="number" id="psw">
                     <button class="btn btn-danger mt-3" type="submit">Invia</button>
                 </form>
-                <h2>Password Generata: <?php echo randomPassword() ?> </h2>
+
             </div>
         </div>
 

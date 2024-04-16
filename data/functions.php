@@ -14,3 +14,9 @@ function randomPassword()
         return implode($pass);
     }
 }
+
+if (isset($_GET["numero"])) {
+    session_start();
+    $_SESSION["numero_session"] = randomPassword();
+    header('Location: ./output.php');
+}
