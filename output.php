@@ -17,7 +17,7 @@ require_once __DIR__ . '/data/functions.php';
 
 <body>
     <div class="container my-5">
-        <h2>Password Generata: <?php echo $_SESSION["numero_session"] ?> </h2>
+        <h2>Password Generata: <span class="text-danger"><?php echo $_SESSION["numero_session"] ?></span> </h2>
     </div>
     <div class="container my-5">
         <a href="redirect.php">Ritorna al generatore</a>
