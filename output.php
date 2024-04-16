@@ -1,6 +1,7 @@
 <?php
-require_once __DIR__ . '/data/functions.php';
 session_start();
+require_once __DIR__ . '/data/functions.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +18,9 @@ session_start();
 <body>
     <div class="container my-5">
         <h2>Password Generata: <?php echo $_SESSION["numero_session"] ?> </h2>
+    </div>
+    <div class="container my-5">
+        <a href="redirect.php">Ritorna al generatore</a>
     </div>
 </body>
 
