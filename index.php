@@ -24,7 +24,8 @@
             <div class="col-6">
                 <form class="mb-5" action="index.php" method="POST">
                     <label class="text-danger mb-4" for="psw">Inserisci un numero che determinerà la lunghezza della password generata</label>
-                    <input class="form-control" type="text" id="psw">
+                    <input class="form-control" type="number" id="psw">
+                    <button class="btn btn-danger mt-3" type="submit">Invia</button>
                 </form>
                 <h2>Output PSW</h2>
             </div>
