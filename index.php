@@ -1,6 +1,17 @@
 <?php
 
-
+function randomPassword()
+{
+    $number = $_GET["numero"];
+    $simboli = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789!?&%$<>^+-*/()[]{}@#_=";
+    $pass = array();
+    $simboli_length = strlen($simboli) - 1;
+    for ($i = 0; $i < $number; $i++) {
+        $n = rand(0, $simboli_length);
+        $pass[] = $simboli[$n];
+    }
+    return implode($pass);
+}
 
 ?>
 
@@ -22,12 +33,12 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-6">
-                <form class="mb-5" action="index.php" method="POST">
+                <form class="mb-5" action="index.php" method="GET">
                     <label class="text-danger mb-4" for="psw">Inserisci un numero che determinerà la lunghezza della password generata</label>
-                    <input class="form-control" type="number" id="psw">
+                    <input class="form-control" name="numero" type="number" id="psw">
                     <button class="btn btn-danger mt-3" type="submit">Invia</button>
                 </form>
-                <h2>Output PSW</h2>
+                <h2>Password Generata: <?php echo randomPassword() ?> </h2>
             </div>
         </div>
 
