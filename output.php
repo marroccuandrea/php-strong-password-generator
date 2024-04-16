@@ -25,3 +25,8 @@ require_once __DIR__ . '/data/functions.php';
 </body>
 
 </html>
+<style>
+    body {
+        background-color: rgb(192, 192, 192);
+    }
+</style>

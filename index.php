@@ -2,7 +2,11 @@
 
 require_once __DIR__ . '/data/functions.php';
 
-
+if (isset($_GET["numero"])) {
+    session_start();
+    $_SESSION["numero_session"] = randomPassword();
+    header('Location: output.php');
+}
 
 ?>
 
